@@ -10,6 +10,35 @@
   </head>
   <body>
     <h1><center>Practica 7 - Php </center></h1>
+    <ul class="nav nav-underline justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#ejercicio1">Ejercicio 1</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio2">Ejercicio 2</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio3">Ejercicio 3</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio4">Ejercicio 4</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio5">Ejercicio 5</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio6">Ejercicio 6</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio7">Ejercicio 7</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#ejercicio8">Ejercicio 8</a>
+      </li>
+    </ul>
     
 
 
