@@ -136,7 +136,9 @@ if ($dado1 == $dado2){
     </div>
 
 
-    <div id="ejercicio6" class="section-container">
+
+
+<div id="ejercicio6" class="section-container">
       <h1>Ejercicio  6</h1></br>
       <?php
       $circulos = rand(1, 10);
@@ -163,6 +165,73 @@ if ($dado1 == $dado2){
       print '</table>';
       ?>
   </div>
+
+
+
+  <div id="ejercicio7" class="section-container">
+      <h1>Ejercicio  7</h1>
+    <?php
+    $imagen_dado = array(
+        1 => "imagenes/cara1.jpg",
+        2 => "imagenes/cara2.jpg",
+        3 => "imagenes/cara3.jpg",
+        4 => "imagenes/cara4.jpg",
+        5 => "imagenes/cara5.jpg",
+        6 => "imagenes/cara6.jpg");
+    
+    $num_dados = rand(1, 10);
+    $total_puntos = 0;
+
+    if ($num_dados == 1) {
+        echo "<h2>Se tiró 1 dado</h2>";
+    } else {
+        echo "<h2>Se tiraron $num_dados dados</h2>";
+    }
+  echo '<div>';
+    for ($i = 0; $i < $num_dados; $i++) {
+    $puntos_dado = rand(1, 6);
+    $total_puntos += $puntos_dado;
+    echo "<img src='" . $imagen_dado[$puntos_dado] . "' alt='Dado " . ($i + 1) . "'>";
+    }
+ echo '</div>';
+ echo "<p>Total de puntos obtenidos: $total_puntos</p>";
+    ?>
+  </div>
+
+
+
+  <div id="ejercicio8" class="section-container">
+    <h1>Ejercicio  8</h1></br>
+        <?php
+   $numeros = [
+       ["Español", "Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"],
+       ["Portugués", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis"],
+       ["Italiano", "Uno", "Due", "Tre", "Quattro", "Cinque", "Sei"]
+   ];
+
+   $imagen_dado = array(
+       1 => "imagenes/cara1.jpg",
+       2 => "imagenes/cara2.jpg",
+       3 => "imagenes/cara3.jpg",
+       4 => "imagenes/cara4.jpg",
+       5 => "imagenes/cara5.jpg",
+       6 => "imagenes/cara6.jpg"
+   );
+
+   $indice_idioma = rand(0, count($numeros) - 1);
+   $idioma_seleccionado = $numeros[$indice_idioma][0];
+   $numeros_idioma = array_slice($numeros[$indice_idioma], 1);
+
+   $tirada_dado = rand(1, 6);
+   $numero_tirado = $numeros_idioma[$tirada_dado - 1];
+   $imagen_tirada = $imagen_dado[$tirada_dado];
+
+   echo "<img src='$imagen_tirada' alt='Dado'>";
+   echo "<h2>El dado ha salido con el  numero: $numero_tirado </br> En idioma: $idioma_seleccionado </h2>";
+
+   
+        ?>
+    </div>
 
 
 
