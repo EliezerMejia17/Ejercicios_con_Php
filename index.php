@@ -39,6 +39,28 @@
           <a class="nav-link" href="#ejercicio8">Ejercicio 8</a>
       </li>
     </ul>
+
+    <div id="inicio" class="section-container">
+        <h2>Inicio</h2>
+        <p>En esta practica se veran diferentes ejercicios donde se trabajara con <b>php</b>, ademas de ver como se trabaja con html y css.</p></p>
+    </div>
+
+    <div id="ejercicio1" class="section-container">
+      <h1>Ejercicio  1</h1></br>
+       <?php
+      $nombre = "Eliezer";
+      $apellido = "Mejia";
+        ?>
+       <h3><?php echo "Nombre: " . $nombre . " " . $apellido; ?></h3>
+  </div>
+
+  <div id="ejercicio2" class="section-container">
+      <h1>Ejercicio  2</h1>
+       <?php
+       $numero = rand(1, 6);
+      ?>
+      Numero aleatorio:  <div id="numero"><?php echo $numero; ?></div>
+  </div>
     
 
 
