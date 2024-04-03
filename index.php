@@ -109,6 +109,64 @@
   </div>
 
 
+  <div id="ejercicio5" class="section-container">
+      <h1>Ejercicio  5</h1>
+      <?php
+      $img_dado = array(
+         1 => "imagenes/cara1.jpg",
+         2 => "imagenes/cara2.jpg",
+         3 => "imagenes/cara3.jpg",
+         4 => "imagenes/cara4.jpg",
+         5 => "imagenes/cara5.jpg",
+         6 => "imagenes/cara6.jpg");
+
+    $dado1 = rand(1, 6);
+    $dado2 = rand(1, 6);
+    $mayor = max($dado1, $dado2);
+
+echo "<img src='" . $img_dado[$dado1] . "' alt ='Dado 1'>";
+echo "<img src='" . $img_dado[$dado2] . "' alt ='Dado 2'>";
+
+if ($dado1 == $dado2){
+  echo "<p>Ha salido una pareja de valores iguales.</p>";
+} else {
+  echo "<p>El valor mayor es: $mayor</p>";
+}
+?>
+    </div>
+
+
+    <div id="ejercicio6" class="section-container">
+      <h1>Ejercicio  6</h1></br>
+      <?php
+      $circulos = rand(1, 10);
+
+      if ($circulos == 1) {
+          print "<h2>$circulos círculo</h2>";
+      } else {
+          print "<h2>$circulos círculos</h2>";
+      }
+
+      print '<table class="conborde">';
+      print '<tbody>';
+
+      for ($i = 0; $i < $circulos; $i++) {
+          print '<tr>';
+          print '<td style="border: 1px solid black;">';
+          print '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="70" height="70">';
+          print '<circle cx="35" cy="35" r="30" fill="black"/>';
+          print '</svg>';
+          print '</td>';
+          print '</tr>';
+      }
+      print '</tbody>';
+      print '</table>';
+      ?>
+  </div>
+
+
+
+
     
 
 
