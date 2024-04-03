@@ -62,6 +62,51 @@
       Numero aleatorio:  <div id="numero"><?php echo $numero; ?></div>
   </div>
     
+  <div id="ejercicio3" class="section-container">
+      <h1>Ejercicio  3</h1>
+      <?php
+      $caras_dado = array(
+          "imagenes/cara1.jpg",
+          "imagenes/cara2.jpg",
+          "imagenes/cara3.jpg"
+      );
+      $indice_cara = rand(0, count($caras_dado) - 1);
+      $imagen_cara = $caras_dado[$indice_cara];
+         ?>
+      <h3>La cara del Dado es: </h3></br>
+      <img src="<?php echo $imagen_cara; ?>" alt="Cara del dado">
+    </div>
+
+    <div id="ejercicio4" class="section-container">
+      <h1>Ejercicio  4</h1>
+       <?php
+      $cartas_imagenes = array(
+      1 => "imagenes/carta1.jpg",
+      2 => "imagenes/carta2.jpg",
+      3 => "imagenes/carta3.jpg",
+      4 => "imagenes/carta4.jpg",
+      5 => "imagenes/carta5.jpg",
+      6 => "imagenes/carta6.jpg",
+      7 => "imagenes/carta7.jpg",
+      8 => "imagenes/carta8.jpg",
+      9 => "imagenes/carta9.jpg",
+      10 => "imagenes/carta10.jpg");
+
+      $carta_1 = rand(1, 10);
+      $carta_2 = rand(1, 10);
+      $carta_3 = rand(1, 10);
+
+      $maximo = max($carta_1, $carta_2, $carta_3);
+
+      echo "<h3>Cartas seleccionadas: </h3>";
+      echo "<img src='" . $cartas_imagenes[$carta_1] . "' alt='Carta $carta_1'>";
+      echo "<img src='" . $cartas_imagenes[$carta_2] . "' alt='Carta $carta_2'>";
+      echo "<img src='" . $cartas_imagenes[$carta_3] . "' alt='Carta $carta_3'>";
+
+      echo "<h3>Carta con el Valor Más Alto:</h3>";
+      echo "<img src='" . $cartas_imagenes[$maximo] . "' alt='Carta $maximo'>";
+      ?>
+  </div>
 
 
     
