@@ -1,0 +1,12 @@
+.section-container {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+}
+
+#numero{
+  display: inline-block;
+  border: black 2px solid;
+  padding: 10px; 
+  font-size: 24px
+}
